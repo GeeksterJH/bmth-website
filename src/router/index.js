@@ -5,6 +5,7 @@ import About from '@/components/About';
 import Albums from '@/components/Albums';
 import Album from '@/components/Album';
 import Contact from '@/components/Contact';
+import MessageSent from '@/components/MessageSent';
 
 Vue.use(Router);
 
@@ -34,6 +35,11 @@ export default new Router({
 			path: '/contact',
 			name: 'Contact',
 			component: Contact
+		},
+		{
+			path: '/sent',
+			name: 'MessageSent',
+			component: MessageSent
 		}
 	]
 });

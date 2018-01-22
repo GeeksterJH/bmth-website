@@ -24,6 +24,7 @@
 
 <style lang="scss">
 	@import '../node_modules/bootstrap/scss/bootstrap.scss';
+	@import url('https://fontlibrary.org/face/caladea');
 
 	* {
 		font-family: 'Caladea', Arial;

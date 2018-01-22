@@ -4,7 +4,7 @@
 
 		<h2 class="h5">Send Us A Message</h2>
 
-		<form action="POST">
+		<form action="POST" v-on:submit.prevent="sendMessage">
 			<textarea class="form-control" placeholder="Enter your message here..."></textarea>
 			<button type="submit" class="mt-3">Send</button>
 		</form>
@@ -19,7 +19,12 @@
 
 <script>
 	export default {
-		name: 'app-contact'
+		name: 'app-contact',
+		methods: {
+			sendMessage() {
+				this.$router.push({ path: 'sent' });
+			}
+		}
 	}
 </script>
 

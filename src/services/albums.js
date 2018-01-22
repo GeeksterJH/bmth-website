@@ -1,5 +1,18 @@
 export default [
 	{
+		name: 'This Is What The Edge Of Your Seat Was Made For',
+		release_year: '2004',
+		description: 'The debut album by Bring Me The Horizon',
+		songs: [
+			'RE: They Have No Reflections',
+			'Who Wants Flowers When You\'re Dead? Nobody.',
+			'Rawwwrr!',
+			'Traitors Never Play Hangman'
+		],
+		video_url: 'https://www.youtube.com/embed/Cl8rtLoIbZE',
+		img_url: require('../assets/albums/edge-of-your-seat.jpg')
+	},
+	{
 		name: 'Count Your Blessings',
 		release_year: '2006',
 		description: 'Count Your Blessings is Bring Me The Horizon\'s debut album. It was originally released in the United Kingdom on 30 October 2006 by Visible Noise but later issued by Earache Records in the United States on 14 August 2007.',
@@ -15,8 +28,8 @@ export default [
 			'Fifteen Fathoms, Counting',
 			'Off The Heezay'
 		],
-		'video_url': 'https://www.youtube.com/embed/QH1CRuSlIUM',
-		'img_url': require('../assets/albums/count-your-blessings.jpg')
+		video_url: 'https://www.youtube.com/embed/QH1CRuSlIUM',
+		img_url: require('../assets/albums/count-your-blessings.jpg')
 	},
 	{
 		name: 'Suicide Season',
