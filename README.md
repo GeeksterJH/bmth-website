@@ -1,21 +1,9 @@
-# bmth-website
+# BMTH Website
 
-> A Vue.js project
+A project I had to make for school.
+A website about _Bring Me The Horizon_ made using [Vue.js](https://vuejs.org/) and a little bit of [Koa.js](http://koajs.com/) to serve the built files.
 
-## Build Setup
+---
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+The website is published using [Heroku](https://www.heroku.com).
+You can see the final result by going to [bmth-website.herokuapp.com](http://bmth-website.herokuapp.com/#/) or by cloning this repo and running ```npm start```
