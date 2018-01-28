@@ -9,8 +9,8 @@
 			Matthew Nichols (drums), Matt Kean (bass) and Lee Malia (guitar)
 		</p>
 
-		<div class="row">
-			<div v-for="member in members" class="col-12 col-sm-6 col-md-4">
+		<div id="albums">
+			<div v-for="member in members">
 				<img class="img-fluid" v-bind:src="member.image" v-bind:alt="member.name">
 				<h4 class="text-center">{{ member.name }}</h4>
 			</div>
@@ -30,3 +30,21 @@
 		}
 	}
 </script>
+
+<style lang="scss" scoped>
+	@import '../media-queries';
+
+	@include sm-up {
+		#albums {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 20px;
+		}
+	}
+
+	@include lg-up {
+		#albums {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+</style>
