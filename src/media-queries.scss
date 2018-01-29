@@ -8,6 +8,12 @@ $breakpoint-lg: 1200px;
 	}
 }
 
+@mixin sm-down {
+	@media screen and (max-width: $breakpoint-sm) {
+		@content;
+	}
+}
+
 @mixin md-up {
 	@media screen and (min-width: $breakpoint-md) {
 		@content;

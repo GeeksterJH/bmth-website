@@ -5,14 +5,9 @@
 
 		<p class="lead">{{ album.description }}</p>
 
-		<div class="row">
-			<div class="col-12 col-sm-6">
-				<img v-bind:src="album.img_url" v-bind:alt="album.name" class="img-fluid">
-			</div>
-
-			<div class="col-12 col-sm-6">
-				<iframe v-bind:src="album.video_url" frameborder="0"></iframe>
-			</div>
+		<div id="preview">
+			<img v-bind:src="album.img_url" v-bind:alt="album.name" class="img-fluid">
+			<iframe v-bind:src="album.video_url" frameborder="0"></iframe>
 		</div>
 
 		<h4>Songs:</h4>
@@ -37,9 +32,23 @@
 </script>
 
 <style lang="scss" scoped>
+	@import '../media-queries';
+	
 	iframe {
 		width: 100%;
 		height: 400px;
+		margin-top: 2rem;
+	}
+
+	@include sm-up {
+		#preview {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 2rem;
+		}
+
+		iframe {
+			margin-top: 0;
+		}
 	}
 </style>
-

@@ -2,8 +2,8 @@
 	<div>
 		<h1>Albums</h1>
 
-		<div class="row">
-			<div class="col-12 col-md-4 col-sm-6" v-for="(album, index) of albums">
+		<div id="albums">
+			<div v-for="(album, index) of albums">
 				<img v-bind:src="album.img_url" v-bind:alt="album.name" class="img-fluid">
 				<router-link :to="'/albums/' + index">
 					<h4>{{ album.name }} ({{ album.release_year }})</h4>
@@ -25,3 +25,13 @@
 		}
 	}
 </script>
+
+<style lang="scss" scoped>
+	#albums {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 1rem;
+		grid-row-gap: 1rem;
+	}
+</style>
+
